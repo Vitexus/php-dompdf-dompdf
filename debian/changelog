@@ -1,0 +1,5 @@
+php-vitexus-dompdf (3.1.5) trixie; urgency=low
+
+  * Initial Debian packaging
+
+ -- Vítězslav Dvořák <info@vitexsoftware.cz>  Thu, 08 May 2026 00:00:00 +0000
