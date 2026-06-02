@@ -1,4 +1,4 @@
-Source: php-vitexus-dompdf
+Source: php-dompdf-dompdf
 Section: php
 Priority: optional
 Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
@@ -8,10 +8,10 @@ Homepage: https://github.com/dompdf/dompdf
 Vcs-Git: https://github.com/Vitexus/dompdf.git
 Rules-Requires-Root: no
 
-Package: php-vitexus-dompdf
+Package: php-dompdf-dompdf
 Architecture: all
 Depends: ${misc:Depends}, php-cli | php, php-dom, php-mbstring,
- php-vitexus-php-font-lib, php-vitexus-php-svg-lib, php-vitexus-html5-php
+ php-dompdf-php-font-lib, php-dompdf-php-svg-lib, php-masterminds-html5
 Description: Dompdf - HTML to PDF converter for PHP
  Dompdf is an HTML to PDF converter written in PHP. At its heart,
  dompdf is a CSS 2.1 compliant HTML layout and rendering engine

@@ -6,12 +6,12 @@ PKG_SOURCE  := $(shell jq -r '.name' composer.json)
 	dh $@
 
 override_dh_install:
-	mkdir -p debian/php-vitexus-dompdf/usr/share/php/Dompdf
-	cp -r src/. debian/php-vitexus-dompdf/usr/share/php/Dompdf/
-	mkdir -p debian/php-vitexus-dompdf/usr/share/php/Dompdf/lib
-	cp lib/Cpdf.php debian/php-vitexus-dompdf/usr/share/php/Dompdf/lib/
-	cp -r lib/fonts debian/php-vitexus-dompdf/usr/share/php/Dompdf/lib/
-	cp -r lib/res debian/php-vitexus-dompdf/usr/share/php/Dompdf/lib/
-	install -m 644 debian/autoload.php debian/php-vitexus-dompdf/usr/share/php/Dompdf/autoload.php
-	sed -i "s|'unknown'|'$(PKG_SOURCE)'|" debian/php-vitexus-dompdf/usr/share/php/Dompdf/autoload.php
-	sed -i "s|'0.0.0'|'$(PKG_VERSION)'|" debian/php-vitexus-dompdf/usr/share/php/Dompdf/autoload.php
+	mkdir -p debian/php-dompdf-dompdf/usr/share/php/Dompdf
+	cp -r src/. debian/php-dompdf-dompdf/usr/share/php/Dompdf/
+	mkdir -p debian/php-dompdf-dompdf/usr/share/php/Dompdf/lib
+	cp lib/Cpdf.php debian/php-dompdf-dompdf/usr/share/php/Dompdf/lib/
+	cp -r lib/fonts debian/php-dompdf-dompdf/usr/share/php/Dompdf/lib/
+	cp -r lib/res debian/php-dompdf-dompdf/usr/share/php/Dompdf/lib/
+	install -m 644 debian/autoload.php debian/php-dompdf-dompdf/usr/share/php/Dompdf/autoload.php
+	sed -i "s|'unknown'|'$(PKG_SOURCE)'|" debian/php-dompdf-dompdf/usr/share/php/Dompdf/autoload.php
+	sed -i "s|'0.0.0'|'$(PKG_VERSION)'|" debian/php-dompdf-dompdf/usr/share/php/Dompdf/autoload.php

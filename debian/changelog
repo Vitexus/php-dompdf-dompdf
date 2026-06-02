@@ -1,4 +1,4 @@
-php-vitexus-dompdf (3.1.5) trixie; urgency=low
+php-dompdf-dompdf (3.1.5) trixie; urgency=low
 
   * Initial Debian packaging
 
