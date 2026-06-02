@@ -5,7 +5,7 @@ declare(strict_types=1);
 require_once '/usr/share/php/Composer/InstalledVersions.php';
 require_once '/usr/share/php/FontLib/autoload.php';
 require_once '/usr/share/php/Svg/autoload.php';
-require_once '/usr/share/php/Masterminds/autoload.php';
+require_once '/usr/share/php/Masterminds/HTML5/autoload.php';
 
 spl_autoload_register(function (string $class): void {
     $prefix = 'Dompdf\\';
